@@ -224,7 +224,7 @@
     "web/studio.html": "dab96672aff481f4a91f510be07b8be40fcf942f117f82a9775de5c0ef263ffa",
     "jitd/origins.py": "2d0c3e4e170112d8c314fb7c9cff238ca2891b0edccffadebc80c18d427c7564",
     "tests/test_public_origin.py": "21c4c3f2fe3042407c847162ff6fb55689b5cba1a854425d2bc8d87314956a29",
-    "vercel-frontend/vercel.json": "6af1895028efaf3a77b391a7c799028dc39f69d345b6b3b7c0f1d1baeb9c8f06",
+    "vercel-frontend/vercel.json": "481801cc405568835c18101c522e2ca0ccbfdf0c6ff610aaa5a3b88cea53cc62",
     "vercel-frontend/public/proxy-info.txt": "0c9318a2df01f56f7adaa19e9daecae94dbe4192909b21ffe39067a682eb7ea4",
     "scripts/update_proxy_manifest.py": "fc30df452b1069a4d679b627ac15e2afefd807d4f6deb0ed0aa8510918ba4f89"
   }
