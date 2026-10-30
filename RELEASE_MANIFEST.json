@@ -95,7 +95,7 @@
     "jitd/assurance_bench.py": "81775c370efc1b64e1c34707df10ee0d28330b1eddd6abdfbe298c51c916ae26",
     "jitd/authority_study.py": "4a0708cdd10173c93f362be035af9f4c0d1c84d46ab6aa5164d4e3c2f8afa9bb",
     "jitd/bench.py": "0c599625a0c63316e3e62a93e13b78017ebdc0bde62c410b3ed78ca3e598ea2a",
-    "jitd/boundary.py": "de2fc71b8db35a598543df5c224f388d6e7e5fe34b012bdfbcbe2f9ddc37628e",
+    "jitd/boundary.py": "d7df45bc85e82c543ab8c94b408c14119bbd39795619fe2f9307cceb697cf31b",
     "jitd/canvas.py": "5d8d03eff48be6272769ea8e274836bc4796340445db0bc066dc896a2061e254",
     "jitd/canvas_api.py": "325e23d5d3c6b58c1f317c9a28e4ba96634a723e63387f3751d19de7095b2cba",
     "jitd/compiler.py": "bea77e7b21b6d8406943ecde7aaa45ea2ae0c19b2df22a303e49c621af4b16ad",
@@ -135,7 +135,7 @@
     "jitd/scenarios.py": "1f11d89b9f31a144e8c280443373611e853e7f9a83b95fd74c96192007dfdcce",
     "jitd/schemas.py": "854adbe43a0243c470797e4ae0344a8a2545a46b3e0e58607e360cc72d1f74ae",
     "jitd/sdk.py": "07c68c48db1b4b6a27e6b6766b8c07789666ec0b5901fd12be7cf5c0fae2f148",
-    "jitd/server.py": "f74c057e9f43fc4df7497a5976459b5db811ea844697e3c4e9fcc5034220b552",
+    "jitd/server.py": "059f5515fc92c5a16f6bd387e6dd22430dd7b87de04f992021f349b515d7d6aa",
     "jitd/services.py": "00e354ff5d65f37b0e1769cae02c0d7ccfa54ca2c2c10bfbfaddc2e1e766a199",
     "jitd/shadow.py": "d42a88f2eee6518b5fe744c9c9f83b0a6683c3b08ad1dedabb93686b4fb5715a",
     "jitd/storage.py": "9459e1438a9b5f7131ef9b994e33449405c4f6e00c65ecaf2cb56baab49e901d",
@@ -221,6 +221,11 @@
     "web/home.html": "a4acff8e5e8a88d03b0aebd6412d29e9c6a8b4f1138d82769cebadcf87078859",
     "web/index.html": "d74d1fd3d5b5a6f04ffceacee50f3962503c5023a347b49afe921e73f8fed113",
     "web/operations.html": "ffa43254cb0fd066d194b272eaaa2632bc617160d0526f482edc75fabbb60b3c",
-    "web/studio.html": "dab96672aff481f4a91f510be07b8be40fcf942f117f82a9775de5c0ef263ffa"
+    "web/studio.html": "dab96672aff481f4a91f510be07b8be40fcf942f117f82a9775de5c0ef263ffa",
+    "jitd/origins.py": "2d0c3e4e170112d8c314fb7c9cff238ca2891b0edccffadebc80c18d427c7564",
+    "tests/test_public_origin.py": "21c4c3f2fe3042407c847162ff6fb55689b5cba1a854425d2bc8d87314956a29",
+    "vercel-frontend/vercel.json": "6af1895028efaf3a77b391a7c799028dc39f69d345b6b3b7c0f1d1baeb9c8f06",
+    "vercel-frontend/public/proxy-info.txt": "0c9318a2df01f56f7adaa19e9daecae94dbe4192909b21ffe39067a682eb7ea4",
+    "scripts/update_proxy_manifest.py": "fc30df452b1069a4d679b627ac15e2afefd807d4f6deb0ed0aa8510918ba4f89"
   }
 }

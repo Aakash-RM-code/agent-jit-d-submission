@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "https://agent-jit-d-backend.onrender.com/:path*"
+    }
+  ]
+}

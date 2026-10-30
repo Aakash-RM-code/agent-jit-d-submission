@@ -14,6 +14,7 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse
 
 from .platform import PlatformStore, allowed, authenticate, data_dir, enterprise
+from .origins import mutation_origin_allowed
 
 MAX_BODY = 2 * 1024 * 1024
 LOG = logging.getLogger('jitd.requests')
@@ -69,12 +70,7 @@ class Boundary:
         if mutation:
             origin = request.headers.get('origin')
             try:
-                def host_port(value):
-                    u = urlsplit(value)
-                    if u.scheme not in ('http', 'https') or u.username or u.password or u.path not in ('', '/') or u.query or u.fragment:
-                        return None
-                    return u.hostname, None if u.port in (None, 80, 443) else u.port
-                if origin and (host_port(origin) is None or host_port(origin) != host_port(str(request.base_url))):
+                if not mutation_origin_allowed(origin, str(request.base_url)):
                     return await reject(403, 'Cross-origin mutation refused')
                 length = request.headers.get('content-length')
                 if length and (int(length) < 0 or int(length) > MAX_BODY):

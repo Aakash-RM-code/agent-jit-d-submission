@@ -1,0 +1,1 @@
+Agent JIT-D public proxy. Pages, static assets and API calls are forwarded to the Render application. No Python runtime or model credentials are needed in this Vercel project.

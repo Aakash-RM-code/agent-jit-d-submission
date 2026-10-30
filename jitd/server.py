@@ -33,6 +33,7 @@ from contextlib import asynccontextmanager
 from .platform import PlatformStore, data_dir, enterprise, validate_runtime
 from .admin import exclusive
 from .boundary import Boundary
+from .origins import mutation_origin_allowed
 
 validate_runtime()
 
@@ -81,14 +82,8 @@ async def workspace_access(request: Request, call_next):
                                 headers={'WWW-Authenticate': 'Basic realm="JIT-D", charset="UTF-8"'})
     if request.method in ('POST', 'PUT', 'DELETE', 'PATCH'):
         origin = request.headers.get('origin')
-        def host_port(value):
-            parsed = urlsplit(value)
-            if parsed.scheme not in ('http', 'https') or parsed.username or parsed.password or parsed.path not in ('', '/') or parsed.query or parsed.fragment:
-                return None
-            port = parsed.port
-            return (parsed.hostname, None if port in (None, 80, 443) else port)
         try:
-            same_host = host_port(origin) == host_port(str(request.base_url)) if origin else True
+            same_host = mutation_origin_allowed(origin, str(request.base_url))
         except ValueError:
             same_host = False
         if origin and not same_host:
